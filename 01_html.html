@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    console.log(1+'23');//'123'
+    console.log(1+true);//2
+    console.log(true+"false");//truefalse
+    console.log(true+false);;//1
+    console.log(typeof(1+'23'));//string
+    console.log(typeof(true+false));//number
+    console.log(typeof(true));//boolean
+
+    console.log(typeof((true))=="boolean");
+    console.log(String(123)+'aaa');//123aaa
+    console.log(parseFloat("abcd"));//NAN
+    console.log(parseFloat("123abc"));//123
+    console.log(parseInt('12345.123'));//12345
+    console.log(parseInt("123abc"));//123
+    console.log(Number("12345678"));//12345678
+    //4 var i=1234；
+    var i=1234;
+    var q=parseInt(i/1000);
+    console.log(q);
+    var b=parseInt(i%1000/100);
+    console.log(b);
+    var s=parseInt(i%100/10);
+    console.log(s);
+    var g=parseInt(i%10);
+    console.log(g);
+
+    i=1;
+    console.log(i++);//1
+    console.log(++i);//3
+    console.log(i--);//3
+    console.log(--i);//1
+</script>
+</body>
+</html>
