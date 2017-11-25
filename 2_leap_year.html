@@ -15,23 +15,60 @@
     console.log(isFinite(Number.MAX_VALUE));
     console.log(isFinite(Number.MIN_VALUE));
 
-    var score=80;
+    var score = 80;
     /*
-      [85,100] -A
-      [75,85) -B
-      [60,75) -C
-      [0,60) -D
-    */
-    function printScoreClass(score){
-        console.log(score>=85&&score<=100?"A":
-                    score>=75?"B":
-                    score>=60?"C":
-                              "D");
-
+     [85,100] -A
+     [75,85) -B
+     [60,75) -C
+     [0,60) -D
+     */
+    function printScoreClass(score) {
+        console.log(score >= 85 && score <= 100 ? "A" :
+                   score >= 75 ? "B" :
+                   score >= 60 ? "C" :
+                                 "D");
 
 
     }
     printScoreClass(score);
+    var today = new Date("2017/11/26");
+    function printDay() {
+
+        switch (today.getDay()) {
+            case 1:
+                console.log("星期一");
+                break;
+            case 2:
+                console.log("星期二");
+                break;
+            case 3:
+                console.log("星期三");
+                break;
+            case 4:
+                console.log("星期斯");
+                break;
+            case 5:
+                console.log("星期五");
+                break;
+            case 6:
+                console.log("星期六");
+                break;
+            default:
+                console.log("星期天");
+        }
+    }
+    printDay();
+
+    for(var i=1;i<10;i++){
+        for(var j=1,test="";j<=i;j++){
+            test+=i+"x"+j+"="+(i*j)+" "
+            //console.log(i+"x"+j+"="+(i*j));
+        }
+        test+="<br>";
+        console.log(test);
+        document.write(test);
+    }
+
 </script>
 
 
