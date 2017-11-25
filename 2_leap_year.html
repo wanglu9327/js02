@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isLeapYear(year) {
+        //判断年份是否是闰年
+        console.log(year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ? "是闰年" : "是平年");
+    }
+    // isLeapYear(prompt("请输入年份"));
+    eval('var x=5,y=10;console.log(x*5)');
+    console.log(isFinite(Number.MAX_VALUE));
+    console.log(isFinite(Number.MIN_VALUE));
+
+    var score=80;
+    /*
+      [85,100] -A
+      [75,85) -B
+      [60,75) -C
+      [0,60) -D
+    */
+    function printScoreClass(score){
+        console.log(score>=85&&score<=100?"A":
+                    score>=75?"B":
+                    score>=60?"C":
+                              "D");
+
+
+
+    }
+    printScoreClass(score);
+</script>
+
+
+</body>
+</html>
